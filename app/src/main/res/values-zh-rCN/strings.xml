@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">安卓LED</string>
+    <string name="input_can_not_be_empty">输入不能为空</string>
+</resources>
