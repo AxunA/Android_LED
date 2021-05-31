@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
-import com.zyou.led.R;
 import com.zyou.led.base.BaseActivity;
 import com.zyou.led.databinding.ActivityShowBinding;
 
@@ -22,7 +20,6 @@ public class ShowActivity extends BaseActivity<ActivityShowBinding> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         super.onCreate(savedInstanceState);
         initViews();
     }

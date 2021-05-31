@@ -7,9 +7,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidLed">
-        <activity android:name=".activity.MainActivity">
+        android:supportsRtl="true">
+        <activity android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AndroidLed">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ShowActivity"
+            android:theme="@style/ShowStyle"
             android:screenOrientation="landscape"/>
+        <activity android:name=".activity.ModelSelectActivity"/>
     </application>
 
 </manifest>

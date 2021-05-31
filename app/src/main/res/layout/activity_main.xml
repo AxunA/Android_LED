@@ -10,7 +10,7 @@
 
     <EditText
         android:id="@+id/et_input"
-        android:text="想跟你要个电话"
+        android:text="想跟你要个电话想跟你要个电话"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -19,7 +19,14 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="onClick"
-        android:text="Start"
+        android:text="@string/start"
         android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_model_select"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/show_model"
+        android:onClick="onClick"/>
 
 </LinearLayout>
