@@ -6,8 +6,8 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.zyou.led.R;
-import com.zyou.led.base.BaseActivity;
 import com.zyou.led.databinding.ActivityMainBinding;
+import com.zyou.led.db.DbUtil;
 import com.zyou.led.util.ToastUtil;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
@@ -15,6 +15,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initDb();
+    }
+
+    private void initDb(){
+        DbUtil.getInstance().getModeDao(getApplicationContext()).getAll();
+
     }
 
     public void onClick(View view) {

@@ -3,4 +3,5 @@
     <string name="input_can_not_be_empty">Input can not be empty</string>
     <string name="start">Start</string>
     <string name="show_model">Show Model</string>
+    <string name="test_word">Text Word</string>
 </resources>

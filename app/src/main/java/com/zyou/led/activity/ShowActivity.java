@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.zyou.led.base.BaseActivity;
 import com.zyou.led.databinding.ActivityShowBinding;
 
 public class ShowActivity extends BaseActivity<ActivityShowBinding> {

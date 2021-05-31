@@ -6,21 +6,6 @@
 
     <com.zyou.led.view.MarqueeTextView
         android:id="@+id/mtv"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.0"
-        android:ellipsize="marquee"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:freezesText="true"
-        android:gravity="center"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:textSize="80dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:scrollHorizontally="true"
-        android:singleLine="true" />
+        style="@style/ShowTv" />
 
 </LinearLayout>

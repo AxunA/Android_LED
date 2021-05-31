@@ -1,12 +1,10 @@
-package com.zyou.led.base;
+package com.zyou.led.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
@@ -27,4 +25,6 @@ public class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
         } catch (NoSuchMethodException | IllegalAccessException| InvocationTargetException e) {
             e.printStackTrace();
         }
-    }}
+    }
+
+}
