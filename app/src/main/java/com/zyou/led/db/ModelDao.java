@@ -5,17 +5,19 @@ import com.zyou.led.entity.ModelEntity;
 import java.util.List;
 
 import androidx.room.Dao;
+import androidx.room.Insert;
 import androidx.room.Query;
 
 @Dao
 public interface ModelDao {
 
-    @Query("SELECT * FROM show_mode")
+    @Query("SELECT * FROM table_model")
     List<ModelEntity> getAll();
 
-    @Query("SELECT ")
+    @Query("SELECT * FROM table_model WHERE is_select IS 1 ")
     ModelEntity getCurrentSelectMode();
 
-    boolean setSelectMode(int position);
+//    @Insert("INSERT ")
+//    boolean setSelectMode(int position);
 
 }

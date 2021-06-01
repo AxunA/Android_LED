@@ -1,13 +1,14 @@
 package com.zyou.led.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "table_model")
 public class ModelEntity {
 
-    @PrimaryKey
+    @PrimaryKey @NonNull
     private String id;
     @ColumnInfo(name = "is_select")
     private boolean isSelect;
@@ -26,6 +27,14 @@ public class ModelEntity {
         this.tvColor = tvColor;
         this.txSize = txSize;
         this.isShowLedForeground = isShowLedForeground;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public boolean isSelect() {
