@@ -46,11 +46,11 @@ public class ModelItemAdapter extends RecyclerView.Adapter<ModelItemAdapter.View
         ModelEntity entity=mList.get(position);
         holder.mRl.setBackgroundResource(entity.getBgColor());
         holder.mTv.setTextColor(entity.getTvColor());
-        holder.mTv.setTextSize(entity.getTxSize());
+        //holder.mTv.setTextSize(entity.getTxSize());
         holder.mForeGroundIv.setVisibility(entity.isShowLedForeground()?View.VISIBLE:View.GONE);
         holder.mSelectV.setBackgroundResource(entity.isSelect()?R.drawable.bg_select_model_item:R.drawable.bg_no_select_model_item);
 
-        holder.mTv.setOnClickListener(new View.OnClickListener() {
+        holder.mRl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mOnItemSelectListener.itemSelect(position);

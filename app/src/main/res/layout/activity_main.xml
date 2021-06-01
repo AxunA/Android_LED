@@ -10,7 +10,7 @@
 
     <EditText
         android:id="@+id/et_input"
-        android:text="想跟你要个电话想跟你要个电话"
+        android:text="想跟你要个电话"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

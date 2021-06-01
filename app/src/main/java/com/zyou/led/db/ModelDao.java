@@ -20,4 +20,7 @@ public interface ModelDao {
 //    @Insert("INSERT ")
 //    boolean setSelectMode(int position);
 
+    @Query("SELECT * FROM table_model WHERE is_select IS 1 ")
+    void insertData(List<ModelEntity> list);
+
 }

@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".comm.MyApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity android:name=".activity.MainActivity"
@@ -19,7 +20,8 @@
         <activity android:name=".activity.ShowActivity"
             android:theme="@style/ShowStyle"
             android:screenOrientation="landscape"/>
-        <activity android:name=".activity.ModelSelectActivity"/>
+        <activity android:name=".activity.ModelSelectActivity"
+            android:theme="@style/ShowStyle"/>
     </application>
 
 </manifest>

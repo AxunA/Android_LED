@@ -2,6 +2,10 @@ package com.zyou.led.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+
+import com.zyou.led.db.DbUtil;
+import com.zyou.led.db.ModelDao;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
@@ -25,6 +29,10 @@ public class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
         } catch (NoSuchMethodException | IllegalAccessException| InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    protected ModelDao getModelDao(){
+        return DbUtil.getInstance().getModeDao(this);
     }
 
 }

@@ -15,7 +15,7 @@
     <Button
         android:id="@+id/btn_select"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:text="@string/start"
         android:onClick="onClick"
         android:layout_alignParentBottom="true"
